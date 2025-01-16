@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 p-0;
+  }
+  
+  #root {
+    @apply w-full min-h-screen;
+  }
+}
+
+.drop-shadow-glow {
+  filter: drop-shadow(0 0 0.75rem rgba(168, 85, 247, 0.4));
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --tremor-background-color: transparent;
+  --tremor-border-color: rgba(147, 51, 234, 0.1);
+  --tremor-brand-primary: rgb(147, 51, 234);
+  --tremor-brand-secondary: rgb(168, 85, 247);
+  --tremor-content-emphasis: rgb(79, 70, 229);
+  --tremor-content: rgb(107, 114, 128);
+  --tremor-content-subtle: rgb(156, 163, 175);
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
